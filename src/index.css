@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased font-sans bg-gray-50 text-gray-900 transition-colors duration-300;
+  }
+  
+  body.dark {
+    @apply bg-navy-950 text-gray-100;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-full transition-colors;
+  }
+  
+  .dark ::-webkit-scrollbar-thumb {
+    @apply bg-navy-800;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400;
+  }
+  
+  .dark ::-webkit-scrollbar-thumb:hover {
+    @apply bg-navy-700;
+  }
+}
+
+@layer components {
+  /* Premium Glassmorphism Cards */
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xl transition-all duration-300;
+  }
+
+  .dark .glass-card {
+    @apply bg-navy-900/80 backdrop-blur-md border border-navy-800/50 shadow-xl;
+  }
+
+  /* Rescue Button - Primary Red */
+  .btn-rescue {
+    @apply px-6 py-3 bg-rescue-600 hover:bg-rescue-700 active:bg-rescue-800 text-white font-medium rounded-lg shadow-lg hover:shadow-rescue-600/30 transition-all duration-200 flex items-center justify-center gap-2;
+  }
+
+  /* Navy Button - Secondary Deep Blue */
+  .btn-navy {
+    @apply px-6 py-3 bg-navy-800 hover:bg-navy-700 active:bg-navy-900 text-white font-medium rounded-lg shadow-lg hover:shadow-navy-800/30 transition-all duration-200 flex items-center justify-center gap-2;
+  }
+
+  .dark .btn-navy {
+    @apply bg-navy-700 hover:bg-navy-600 active:bg-navy-800;
+  }
+  
+  /* Outline Button */
+  .btn-outline {
+    @apply px-6 py-3 border-2 border-gray-300 hover:border-gray-900 text-gray-800 font-medium rounded-lg transition-all duration-200 flex items-center justify-center gap-2;
+  }
+  
+  .dark .btn-outline {
+    @apply border-navy-700 hover:border-white text-gray-200 hover:text-white;
+  }
+  
+  /* Section Header */
+  .section-title {
+    @apply font-heading text-3xl md:text-4xl font-extrabold text-navy-800 dark:text-white tracking-tight;
+  }
+  
+  .section-subtitle {
+    @apply text-rescue-600 dark:text-rescue-400 uppercase tracking-widest font-bold text-sm mb-2;
+  }
+}
+
+/* Custom visual highlights */
+.bg-mesh-pattern {
+  background-image: radial-gradient(at 0% 0%, rgba(239, 68, 68, 0.05) 0px, transparent 50%),
+                    radial-gradient(at 50% 0%, rgba(15, 30, 54, 0.05) 0px, transparent 50%),
+                    radial-gradient(at 100% 0%, rgba(239, 68, 68, 0.03) 0px, transparent 50%);
+}
+
+.dark .bg-mesh-pattern {
+  background-image: radial-gradient(at 0% 0%, rgba(239, 68, 68, 0.08) 0px, transparent 50%),
+                    radial-gradient(at 50% 0%, rgba(10, 20, 36, 0.2) 0px, transparent 50%),
+                    radial-gradient(at 100% 0%, rgba(239, 68, 68, 0.05) 0px, transparent 50%);
+}
+
+/* Hide default input arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
