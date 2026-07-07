@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { X, ZoomIn, ChevronRight, ChevronLeft } from 'lucide-react'
-import { galleryItems } from '../data/trainingData'
+import { usePortfolio } from '../context/PortfolioContext'
 
 export default function Gallery() {
+  const { galleryItems } = usePortfolio();
   const [activeFilter, setActiveFilter] = useState("All");
   const [lightboxIndex, setLightboxIndex] = useState(null);
 

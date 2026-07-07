@@ -12,6 +12,8 @@ import Certifications from './components/Certifications'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import { PortfolioProvider } from './context/PortfolioContext'
+import Customizer from './components/Customizer'
 
 function MainLandingPage() {
   return (
@@ -79,17 +81,20 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-screen font-sans bg-gray-50 text-gray-900 dark:bg-navy-950 dark:text-gray-100 transition-colors duration-300 bg-mesh-pattern bg-no-repeat bg-cover">
-        <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        
-        <main className="relative pt-16">
-          <Routes>
-            <Route path="/" element={<MainLandingPage />} />
-          </Routes>
-        </main>
-        
-        <Footer />
-      </div>
+      <PortfolioProvider>
+        <div className="min-h-screen font-sans bg-gray-50 text-gray-900 dark:bg-navy-950 dark:text-gray-100 transition-colors duration-300 bg-mesh-pattern bg-no-repeat bg-cover">
+          <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          
+          <main className="relative pt-16">
+            <Routes>
+              <Route path="/" element={<MainLandingPage />} />
+            </Routes>
+          </main>
+          
+          <Footer />
+          <Customizer />
+        </div>
+      </PortfolioProvider>
     </Router>
   )
 }

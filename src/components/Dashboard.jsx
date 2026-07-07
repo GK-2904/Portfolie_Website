@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Cell } from 'recharts'
 import { Users, GraduationCap, MapPin, CheckCircle } from 'lucide-react'
-import { districtStats } from '../data/trainingData'
+import { usePortfolio } from '../context/PortfolioContext'
 
 export default function Dashboard() {
+  const { districtStats } = usePortfolio();
   const [activeDistrict, setActiveDistrict] = useState(null);
 
   // Compute metrics

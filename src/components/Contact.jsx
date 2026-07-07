@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Phone, Mail, MapPin, Send, MessageSquareCode, CheckCircle, AlertCircle } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { contactDetails } from '../data/trainingData'
+import { usePortfolio } from '../context/PortfolioContext'
 
 export default function Contact() {
+  const { contactDetails } = usePortfolio();
   const [formData, setFormData] = useState({
     name: '',
     mobile: '',

@@ -1,9 +1,10 @@
 import React from 'react'
 import { ArrowRight, Calendar, ShieldCheck } from 'lucide-react'
 import { motion } from 'framer-motion'
-import { instructorInfo } from '../data/trainingData'
+import { usePortfolio } from '../context/PortfolioContext'
 
 export default function Hero() {
+  const { instructorInfo } = usePortfolio();
   const handleScroll = (id) => {
     const element = document.querySelector(id);
     if (element) {

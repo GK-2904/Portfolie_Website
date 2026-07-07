@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Sun, Moon, Menu, X, ShieldAlert } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { usePortfolio } from '../context/PortfolioContext'
 
 export default function Navbar({ darkMode, toggleDarkMode }) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { instructorInfo } = usePortfolio();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,10 +63,10 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
             </div>
             <div className="flex flex-col">
               <span className="font-heading font-black tracking-tight text-lg sm:text-xl text-navy-800 dark:text-white leading-none">
-                Om Naganath Sapar
+                {instructorInfo.name}
               </span>
               <span className="font-sans text-[9px] sm:text-[10px] tracking-widest text-rescue-600 dark:text-rescue-400 font-bold uppercase mt-0.5">
-                Rescue Trainer
+                {instructorInfo.role}
               </span>
             </div>
           </a>

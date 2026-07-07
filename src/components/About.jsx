@@ -1,9 +1,10 @@
 import React from 'react'
 import { CheckCircle2, Award, Calendar, ShieldCheck, Users } from 'lucide-react'
 import { motion } from 'framer-motion'
-import { instructorInfo } from '../data/trainingData'
+import { usePortfolio } from '../context/PortfolioContext'
 
 export default function About() {
+  const { instructorInfo } = usePortfolio();
   const cardData = [
     { icon: Award, label: "Experience", value: "1 Year Active" },
     { icon: Users, label: "Trainees", value: "777 Trained" },

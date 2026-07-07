@@ -1,9 +1,10 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { CheckCircle } from 'lucide-react'
-import { activities } from '../data/trainingData'
+import { usePortfolio } from '../context/PortfolioContext'
 
 export default function FieldActivities() {
+  const { activities } = usePortfolio();
   return (
     <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
       <div className="text-center mb-20">

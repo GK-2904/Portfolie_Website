@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { impactStats } from '../data/trainingData'
+import { usePortfolio } from '../context/PortfolioContext'
 
 function Counter({ value, suffix = "" }) {
   const [count, setCount] = useState(0);
@@ -38,6 +38,7 @@ function Counter({ value, suffix = "" }) {
 }
 
 export default function ImpactStats() {
+  const { impactStats } = usePortfolio();
   return (
     <div className="bg-navy-900 dark:bg-navy-950 py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden border-y border-navy-800">
       {/* Decorative background lights */}

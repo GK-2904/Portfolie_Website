@@ -1,7 +1,7 @@
 import React from 'react'
 import * as Icons from 'lucide-react'
 import { motion } from 'framer-motion'
-import { subjects } from '../data/trainingData'
+import { usePortfolio } from '../context/PortfolioContext'
 
 // Helper to dynamic-map Lucide Icons
 function IconRenderer({ iconName, className }) {
@@ -16,6 +16,7 @@ function IconRenderer({ iconName, className }) {
 }
 
 export default function Subjects() {
+  const { subjects } = usePortfolio();
   return (
     <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-gray-100/50 dark:bg-navy-900/30">
       <div className="max-w-7xl mx-auto">

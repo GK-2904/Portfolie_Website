@@ -1,8 +1,9 @@
 import React from 'react'
 import { ShieldAlert, Facebook, Twitter, Linkedin, Youtube, ArrowUp } from 'lucide-react'
-import { contactDetails, subjects, instructorInfo } from '../data/trainingData'
+import { usePortfolio } from '../context/PortfolioContext'
 
 export default function Footer() {
+  const { contactDetails, subjects, instructorInfo } = usePortfolio();
   const handleScrollTop = (e) => {
     e.preventDefault();
     window.scrollTo({
