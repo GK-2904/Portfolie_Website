@@ -1,9 +1,10 @@
 import React from 'react'
 import { Award, Landmark } from 'lucide-react'
 import { motion } from 'framer-motion'
-import { certifications } from '../data/trainingData'
+import { usePortfolio } from '../context/PortfolioContext'
 
 export default function Certifications() {
+  const { certifications } = usePortfolio();
   return (
     <section className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-gray-100/50 dark:bg-navy-900/30">
       <div className="max-w-7xl mx-auto">
