@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
-import * as initialData from '../data/trainingData';
+import initialData from '../data/trainingData.json';
 
 const PortfolioContext = createContext(null);
 
@@ -38,12 +38,11 @@ export function PortfolioProvider({ children }) {
       subjects: initialData.subjects,
       activities: initialData.activities,
       districtStats: initialData.districtStats,
-      galleryItems: initialData.certifications ? initialData.certifications : [],
+      galleryItems: initialData.galleryItems,
+      certifications: initialData.certifications,
       testimonials: initialData.testimonials,
       contactDetails: initialData.contactDetails,
     };
-    // fallback if certifications import is structure-dependent
-    raw.certifications = initialData.certifications;
     setData(raw);
     localStorage.removeItem('sapar_portfolio_data');
   };

@@ -1,0 +1,272 @@
+{
+  "instructorInfo": {
+    "name": "Om Naganath Sapar",
+    "role": "Rescue Trainer",
+    "academy": "ITUS (Indian Rescue Academy)",
+    "tagline": "Every second counts in an emergency. That's why I teach rescue skills to everyday people.",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800",
+    "bio": "Hi, I’m Om Naganath Sapar of ITUS (Indian Rescue Academy)\n\nEvery second counts in an emergency. That’s why I teach rescue skills to everyday people.\n\nAt ITUS (Indian Rescue Academy), we run hands-on rescue training programs to help individuals, schools, and organizations respond confidently when it matters most.\nFrom first aid and CPR to fire safety and disaster response. My goal is to put life-saving skills in more hands.\n\nOn this site you’ll find our training programs, safety resources and much more.\n\nBecause heroes aren’t born. They’re trained.\nLet’s start.",
+    "skills": [
+      "Disaster Management",
+      "Boat Paddling (IRB)",
+      "Boat Handling (IRB)",
+      "CPR & Life Support",
+      "Emergency Bandages",
+      "Victim Carrying Techniques",
+      "Rescue Knots & Rigging",
+      "Basic Fire Fighting",
+      "Flood Wading Techniques",
+      "Geography & Hazard Mapping"
+    ]
+  },
+  "impactStats": [
+    { "id": "trainees", "label": "Trainees Trained", "count": 777, "suffix": "", "color": "text-rescue-500" },
+    { "id": "districts", "label": "Districts Covered", "count": 5, "suffix": "", "color": "text-navy-500" },
+    { "id": "programs", "label": "Training Camps", "count": 7, "suffix": "", "color": "text-rescue-500" },
+    { "id": "modules", "label": "Skills Modules", "count": 9, "suffix": "", "color": "text-navy-500" }
+  ],
+  "subjects": [
+    {
+      "id": 1,
+      "title": "Disaster Management",
+      "icon": "ShieldAlert",
+      "description": "Preparing for and responding to natural and man-made disasters, conducting safety audits, and emergency drill execution."
+    },
+    {
+      "id": 2,
+      "title": "Boat Paddling (IRB)",
+      "icon": "Waves",
+      "description": "Mastering paddle synchronization, river/flood navigation, and team-based paddling in Inflatable Rescue Boats."
+    },
+    {
+      "id": 3,
+      "title": "Boat Handling (IRB)",
+      "icon": "Compass",
+      "description": "Technical maneuvering, motor rescue operations, and maintenance of Inflatable Rescue Boats during flood rescue missions."
+    },
+    {
+      "id": 4,
+      "title": "CPR (Cardiopulmonary Resuscitation)",
+      "icon": "HeartPulse",
+      "description": "Life-saving emergency procedures including high-quality chest compressions, rescue breathing, and AED operation."
+    },
+    {
+      "id": 5,
+      "title": "Bandages & First Aid",
+      "icon": "Activity",
+      "description": "Applying emergency pressure bandages, splinting fractures, and managing head/spinal injuries during trauma."
+    },
+    {
+      "id": 6,
+      "title": "Victim Carrying Techniques",
+      "icon": "Users",
+      "description": "Mastering single-rescuer and multi-rescuer carry styles, improvised stretchers, and rapid extraction methods."
+    },
+    {
+      "id": 7,
+      "title": "Knots & Rope Rigging",
+      "icon": "Anchor",
+      "description": "Tying essential safety and rigging knots (bowline, clove hitch, figure-eight) for climbing, anchoring, and haulage."
+    },
+    {
+      "id": 8,
+      "title": "Basic Fire Fighting",
+      "icon": "Flame",
+      "description": "Understanding combustion classes, deploying fire extinguishers (CO2, DCP), and executing safety evacuation drills."
+    },
+    {
+      "id": 9,
+      "title": "Wading Techniques",
+      "icon": "Footprints",
+      "description": "Safe foot-crossing methods in fast-flowing water channels, forming wading chains, and overcoming flood currents."
+    }
+  ],
+  "activities": [
+    {
+      "id": 1,
+      "title": "Disaster Management Drills",
+      "subtitle": "Emergency Response & Prep",
+      "description": "Simulating emergency events where participants learn search & rescue operations, victim assessment, and coordination with local disaster response systems.",
+      "image": "https://images.unsplash.com/photo-1599733589046-10c005739ef9?q=80&w=800&auto=format&fit=crop",
+      "tag": "Disaster Prep"
+    },
+    {
+      "id": 2,
+      "title": "Boat Paddling (IRB)",
+      "subtitle": "Water Craft Control",
+      "description": "Hands-on water training teaching sync paddling, weight distribution, and team rowing in Inflatable Rescue Boats.",
+      "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop",
+      "tag": "Water Rescue"
+    },
+    {
+      "id": 3,
+      "title": "Boat Handling (IRB)",
+      "subtitle": "Motor Operations & Steering",
+      "description": "Mastering the mechanical operation, launch protocols, and swift rescue turns of motor-powered Inflatable Rescue Boats.",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+      "tag": "IRB Operations"
+    },
+    {
+      "id": 4,
+      "title": "CPR Workshops",
+      "subtitle": "Cardiopulmonary Resuscitation",
+      "description": "Learning high-quality compressions, emergency airway management, and proper automated external defibrillator (AED) usage.",
+      "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800&auto=format&fit=crop",
+      "tag": "Life Support"
+    },
+    {
+      "id": 5,
+      "title": "Emergency Bandaging",
+      "subtitle": "Wound Management & Splints",
+      "description": "Practical training in wrapping head wounds, applying pressure dressings, and immobilizing limb fractures using splints.",
+      "image": "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=800&auto=format&fit=crop",
+      "tag": "First Aid"
+    },
+    {
+      "id": 6,
+      "title": "Victim Carrying Drills",
+      "subtitle": "Safe Extraction Methods",
+      "description": "Understanding single-person carries, two-person seat carries, firemans lift, and drag methods to extract victims safely.",
+      "image": "https://images.unsplash.com/photo-1473876613951-a1a1643b255b?q=80&w=800&auto=format&fit=crop",
+      "tag": "Evacuation"
+    },
+    {
+      "id": 7,
+      "title": "Rescue Knots & Rigging",
+      "subtitle": "Rope Security & Anchors",
+      "description": "Instruction in critical knots (bowline, clove hitch, figure-eight) to establish secure anchors and lines during rescue missions.",
+      "image": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=800&auto=format&fit=crop",
+      "tag": "Rope Rescue"
+    },
+    {
+      "id": 8,
+      "title": "Basic Fire Fighting",
+      "subtitle": "Fire Suppression & Evacuation",
+      "description": "Deploying standard fire extinguishers using the PASS method, identifying fire classes, and coordinating safe exits.",
+      "image": "https://images.unsplash.com/photo-1599733589046-10c005739ef9?q=80&w=800&auto=format&fit=crop",
+      "tag": "Fire Safety"
+    },
+    {
+      "id": 9,
+      "title": "Wading Techniques",
+      "subtitle": "Crossing Flood Channels",
+      "description": "Learning wading line formations and methods to cross deep, rapid currents safely as a cohesive responder unit.",
+      "image": "https://images.unsplash.com/photo-1504150559414-a479378078f4?q=80&w=800&auto=format&fit=crop",
+      "tag": "Flood Rescue"
+    }
+  ],
+  "districtStats": [
+    { "name": "Wardha", "trainings": 3, "boys": 305, "girls": 20, "totalTrainees": 325 },
+    { "name": "Yavatmal", "trainings": 1, "boys": 102, "girls": 48, "totalTrainees": 150 },
+    { "name": "Buldhana", "trainings": 1, "boys": 78, "girls": 52, "totalTrainees": 130 },
+    { "name": "Kanjarla", "trainings": 1, "boys": 77, "girls": 35, "totalTrainees": 112 },
+    { "name": "Washim", "trainings": 1, "boys": 41, "girls": 19, "totalTrainees": 60 }
+  ],
+  "galleryItems": [
+    {
+      "id": 1,
+      "title": "IRB Maneuvers",
+      "subtitle": "Boat Handling",
+      "category": "Water Rescue",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+      "description": "Trainees practicing speed maneuvers and steering during rapid response exercises."
+    },
+    {
+      "id": 2,
+      "title": "High-Quality CPR",
+      "subtitle": "Cardiopulmonary Resuscitation",
+      "category": "First Aid & CPR",
+      "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800&auto=format&fit=crop",
+      "description": "Hands-on practice on training manikins focusing on compression depth and speed."
+    },
+    {
+      "id": 3,
+      "title": "Emergency Fire Fighting",
+      "subtitle": "Extinguisher Operation",
+      "category": "Disaster & Fire",
+      "image": "https://images.unsplash.com/photo-1599733589046-10c005739ef9?q=80&w=800&auto=format&fit=crop",
+      "description": "Teaching students and volunteers the PASS technique to handle minor fire outbreaks."
+    },
+    {
+      "id": 4,
+      "title": "Victim Evacuation",
+      "subtitle": "Carry Techniques",
+      "category": "First Aid & CPR",
+      "image": "https://images.unsplash.com/photo-1473876613951-a1a1643b255b?q=80&w=800&auto=format&fit=crop",
+      "description": "Demonstrating double-man seat carries and shoulder drags for swift recovery."
+    },
+    {
+      "id": 5,
+      "title": "Flood Wading Drills",
+      "subtitle": "Wading Line Formations",
+      "category": "Water Rescue",
+      "image": "https://images.unsplash.com/photo-1504150559414-a479378078f4?q=80&w=800&auto=format&fit=crop",
+      "description": "Team formations to safely cross fast-flowing river streams and flood waters."
+    },
+    {
+      "id": 6,
+      "title": "Rope Rigging and Knots",
+      "subtitle": "Knot Instruction",
+      "category": "Disaster & Fire",
+      "image": "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=800&auto=format&fit=crop",
+      "description": "Securing anchoring knots for high-angle rescue and rope lines."
+    }
+  ],
+  "certifications": [
+    {
+      "id": 1,
+      "title": "Aapda Mitra Disaster Responder",
+      "organization": "Disaster Management Authority",
+      "description": "Official governmental responder certificate authorizing community search, rescue, first aid support, and local disaster mitigation operations.",
+      "image": "https://images.unsplash.com/photo-1589330694653-ded6df53f7eb?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+      "id": 2,
+      "title": "Disaster Risk Reduction Certificate",
+      "organization": "FPA India (Solapur Branch)",
+      "description": "Honored on International Day For Disaster Risk Reduction for active volunteer leadership and disaster relief preparedness workshops.",
+      "image": "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+      "id": 3,
+      "title": "State Running Gold Medal",
+      "organization": "State Athletics Association",
+      "description": "Gold Medal achievement in State Level Running Competition, highlighting elite physical stamina, sprint coaching capabilities, and endurance.",
+      "image": "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=800&auto=format&fit=crop"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Akash Shinde",
+      "role": "Rescue Course Participant",
+      "rating": 5,
+      "feedback": "Om Sir's IRB boat handling and water safety instruction was top-notch. He explains safety checks so clearly that everyone felt completely secure. The hands-on drills were excellent."
+    },
+    {
+      "id": 2,
+      "name": "Sneha Patil",
+      "role": "First Aid & CPR Attendee",
+      "rating": 5,
+      "feedback": "The CPR and emergency bandage training organized by Om Sir was highly practical. We learned real life-saving skills and built actual confidence to handle emergency situations."
+    },
+    {
+      "id": 3,
+      "name": "Dr. R. K. Joshi",
+      "role": "FPA India Solapur Representative",
+      "rating": 5,
+      "feedback": "Om Naganath Sapar has demonstrated exemplary dedication during our Disaster Risk Reduction events. His discipline, root understanding of geography, and leadership skills make him an outstanding trainer."
+    }
+  ],
+  "contactDetails": {
+    "phone": "+91 8483933665",
+    "email": "oms847415@gmail.com",
+    "address": "B/410, Vidi Gharkul, Hyderabad Road, Solapur, Maharashtra - 413005",
+    "socials": {
+      "facebook": "https://facebook.com/om.sapar",
+      "twitter: ": "https://twitter.com/om_sapar",
+      "linkedin": "https://linkedin.com/in/om-nagnath-sapar",
+      "youtube": "https://youtube.com/om_sapar"
+    }
+  }
+}
