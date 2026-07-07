@@ -54,19 +54,19 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-heading font-black text-4xl sm:text-5xl md:text-7xl text-white tracking-tight leading-none mb-4"
         >
-          {instructorInfo.academy}
+          {instructorInfo.name}
         </motion.h1>
 
-        {/* Role Name */}
+        {/* Role & Academy */}
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="font-heading text-xl sm:text-2xl md:text-3xl font-semibold text-gray-200 mb-6 flex items-center gap-3"
+          className="font-heading text-xl sm:text-2xl md:text-3xl font-semibold text-gray-200 mb-6 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3"
         >
-          <span>Led by {instructorInfo.name}</span>
-          <span className="h-1.5 w-1.5 rounded-full bg-rescue-500 hidden sm:inline-block" />
-          <span className="text-rescue-500 font-bold sm:inline-block block text-lg sm:text-2xl uppercase tracking-widest">{instructorInfo.role}</span>
+          <span className="text-rescue-500 font-bold uppercase tracking-widest text-lg sm:text-2xl">{instructorInfo.role}</span>
+          <span className="hidden sm:inline-block h-1.5 w-1.5 rounded-full bg-rescue-500" />
+          <span className="text-gray-300 font-medium">{instructorInfo.academy}</span>
         </motion.h2>
 
         {/* Tagline */}

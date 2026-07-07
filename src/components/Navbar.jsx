@@ -60,11 +60,11 @@ export default function Navbar({ darkMode, toggleDarkMode }) {
               <ShieldAlert className="w-6 h-6" />
             </div>
             <div className="flex flex-col">
-              <span className="font-heading font-black tracking-tight text-xl text-navy-800 dark:text-white leading-none">
-                ITUS
+              <span className="font-heading font-black tracking-tight text-lg sm:text-xl text-navy-800 dark:text-white leading-none">
+                Om Naganath Sapar
               </span>
-              <span className="font-sans text-[10px] tracking-widest text-rescue-600 dark:text-rescue-400 font-bold uppercase">
-                Rescue Academy
+              <span className="font-sans text-[9px] sm:text-[10px] tracking-widest text-rescue-600 dark:text-rescue-400 font-bold uppercase mt-0.5">
+                Rescue Trainer
               </span>
             </div>
           </a>

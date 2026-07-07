@@ -5,9 +5,9 @@ import { instructorInfo } from '../data/trainingData'
 
 export default function About() {
   const cardData = [
-    { icon: Award, label: "Experience", value: "8+ Years Active" },
-    { icon: Users, label: "Trainees", value: "24K+ Trained" },
-    { icon: Calendar, label: "Conducted", value: "650+ Programs" }
+    { icon: Award, label: "Experience", value: "1 Year Active" },
+    { icon: Users, label: "Trainees", value: "777 Trained" },
+    { icon: Calendar, label: "Conducted", value: "7 Programs" }
   ];
 
   return (
@@ -75,7 +75,7 @@ export default function About() {
             Developing Preparedness, response, and Resilience in Crisis Scenarios.
           </h3>
           
-          <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-base">
+          <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-base whitespace-pre-line">
             {instructorInfo.bio}
           </p>
           

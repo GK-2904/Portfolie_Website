@@ -1,198 +1,232 @@
-// ITUS (Indian Rescue Academy) - Structured Data
+// Om Naganath Sapar - Structured Portfolio Data
 
 export const instructorInfo = {
-  name: "Om Nagnath Sapar",
-  role: "Rescue Trainer & Adventure Instructor",
+  name: "Om Naganath Sapar",
+  role: "Rescue Trainer",
   academy: "ITUS (Indian Rescue Academy)",
-  tagline: "Training Future Rescue Professionals, Emergency Responders & Cadet Squads",
-  avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800", // Default placeholder, client can update later
-  bio: "Om Nagnath Sapar is a dedicated Rescue Trainer at ITUS (Indian Rescue Academy) and an experienced adventure coach. With a background in Geography (M.Sc) and certification from the National Cadet Corps (NCC), he specializes in disaster response, tactical self-defense, martial weapons, and outdoor survival. He has actively trained rescue teams, student cadets, and community volunteers across Maharashtra, specializing in both emergency disaster response and adventurous survival skills.",
+  tagline: "Every second counts in an emergency. That's why I teach rescue skills to everyday people.",
+  avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800", // Default placeholder
+  bio: `Hi, I’m Om Naganath Sapar of ITUS (Indian Rescue Academy)
+
+Every second counts in an emergency. That’s why I teach rescue skills to everyday people.
+
+At ITUS (Indian Rescue Academy), we run hands-on rescue training programs to help individuals, schools, and organizations respond confidently when it matters most.
+From first aid and CPR to fire safety and disaster response. My goal is to put life-saving skills in more hands.
+
+On this site you’ll find our training programs, safety resources and much more.
+
+Because heroes aren’t born. They’re trained.
+Let’s start.`,
   skills: [
-    "Disaster Response (Aapda Mitra)",
-    "Lathi-Kathi Training",
-    "Sword Fighting (Talwarbaji)",
-    "Rifle Shooting Instruction",
-    "Self-Defense & Physical Fitness",
-    "Ziplining & Adventure Operations",
-    "Team Building & Leadership Games",
-    "Geography & Hazard Mapping",
-    "First Aid & Emergency Care",
-    "Civil Defense & Crowd Management"
+    "Disaster Management",
+    "Boat Paddling (IRB)",
+    "Boat Handling (IRB)",
+    "CPR & Life Support",
+    "Emergency Bandages",
+    "Victim Carrying Techniques",
+    "Rescue Knots & Rigging",
+    "Basic Fire Fighting",
+    "Flood Wading Techniques",
+    "Geography & Hazard Mapping"
   ]
 };
 
 export const impactStats = [
-  { id: "trainees", label: "Trainees Trained", count: 1200, suffix: "+", color: "text-rescue-500" },
-  { id: "districts", label: "Districts Covered", count: 6, suffix: "", color: "text-navy-500" },
-  { id: "programs", label: "Training Camps", count: 45, suffix: "+", color: "text-rescue-500" },
-  { id: "modules", label: "Skills Modules", count: 8, suffix: "", color: "text-navy-500" }
+  { id: "trainees", label: "Trainees Trained", count: 777, suffix: "", color: "text-rescue-500" },
+  { id: "districts", label: "Districts Covered", count: 5, suffix: "", color: "text-navy-500" },
+  { id: "programs", label: "Training Camps", count: 7, suffix: "", color: "text-rescue-500" },
+  { id: "modules", label: "Skills Modules", count: 9, suffix: "", color: "text-navy-500" }
 ];
 
 export const subjects = [
   {
     id: 1,
-    title: "Disaster Response (Aapda Mitra)",
+    title: "Disaster Management",
     icon: "ShieldAlert",
-    description: "Core emergency preparedness, search & rescue drills, and community mobilization following official Aapda Mitra guidelines."
+    description: "Preparing for and responding to natural and man-made disasters, conducting safety audits, and emergency drill execution."
   },
   {
     id: 2,
-    title: "Lathi-Kathi Training",
-    icon: "Wind",
-    description: "Traditional stick fighting techniques for physical coordination, reflex building, self-defense, and crowd control."
+    title: "Boat Paddling (IRB)",
+    icon: "Waves",
+    description: "Mastering paddle synchronization, river/flood navigation, and team-based paddling in Inflatable Rescue Boats."
   },
   {
     id: 3,
-    title: "Sword Fighting (Talwarbaji)",
-    icon: "Ship", // Reused or alternate, we map to Anchor/Sword
-    description: "Traditional swordsmanship training focusing on stance, agility, block maneuvers, and historic physical culture."
+    title: "Boat Handling (IRB)",
+    icon: "Compass",
+    description: "Technical maneuvering, motor rescue operations, and maintenance of Inflatable Rescue Boats during flood rescue missions."
   },
   {
     id: 4,
-    title: "Rifle Shooting",
-    icon: "Activity",
-    description: "Basic rifle safety rules, aiming principles, steady hold control, firing cadences, and target scoring."
+    title: "CPR (Cardiopulmonary Resuscitation)",
+    icon: "HeartPulse",
+    description: "Life-saving emergency procedures including high-quality chest compressions, rescue breathing, and AED operation."
   },
   {
     id: 5,
-    title: "Self-Defense Techniques",
-    icon: "HeartPulse",
-    description: "Practical hand-to-hand combat drills, situational awareness, and special empowerment defense camps for women."
+    title: "Bandages & First Aid",
+    icon: "Activity",
+    description: "Applying emergency pressure bandages, splinting fractures, and managing head/spinal injuries during trauma."
   },
   {
     id: 6,
-    title: "Adventure Activities",
-    icon: "UserCheck",
-    description: "High-angle operations, ziplining mechanics, standard safety harness rigging, and artificial obstacle courses."
+    title: "Victim Carrying Techniques",
+    icon: "Users",
+    description: "Mastering single-rescuer and multi-rescuer carry styles, improvised stretchers, and rapid extraction methods."
   },
   {
     id: 7,
-    title: "Team Building Games",
-    icon: "Users",
-    description: "Cooperative group tasks, leadership challenges, communication drills, and character-building exercises."
+    title: "Knots & Rope Rigging",
+    icon: "Anchor",
+    description: "Tying essential safety and rigging knots (bowline, clove hitch, figure-eight) for climbing, anchoring, and haulage."
   },
   {
     id: 8,
-    title: "Disaster Risk Reduction",
+    title: "Basic Fire Fighting",
     icon: "Flame",
-    description: "Mitigation planning, local hazard vulnerability analysis, and community safety auditing."
+    description: "Understanding combustion classes, deploying fire extinguishers (CO2, DCP), and executing safety evacuation drills."
   },
   {
     id: 9,
-    title: "Physical Fitness & Run Coach",
-    icon: "Activity",
-    description: "Athletic conditioning, stamina build drills, running mechanics, led by a State-level Gold Medalist runner."
+    title: "Wading Techniques",
+    icon: "Footprints",
+    description: "Safe foot-crossing methods in fast-flowing water channels, forming wading chains, and overcoming flood currents."
   }
 ];
 
 export const activities = [
   {
     id: 1,
-    title: "Aapda Mitra Disaster Drills",
-    subtitle: "Emergency Response & Rescue Operations",
-    description: "Simulating emergency events where participants learn search & rescue operations, victim assessment, initial aid, and coordination with local disaster response systems.",
+    title: "Disaster Management Drills",
+    subtitle: "Emergency Response & Prep",
+    description: "Simulating emergency events where participants learn search & rescue operations, victim assessment, and coordination with local disaster response systems.",
     image: "https://images.unsplash.com/photo-1599733589046-10c005739ef9?q=80&w=800&auto=format&fit=crop",
-    tag: "Disaster Response"
+    tag: "Disaster Prep"
   },
   {
     id: 2,
-    title: "Traditional Lathi-Kathi Camps",
-    subtitle: "Cultural Self-Defense & Fitness",
-    description: "Intense physical training sessions teaching traditional stick handling, blocks, strikes, and coordination patterns to promote focus and personal defense skills.",
-    image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=800&auto=format&fit=crop",
-    tag: "Self-Defense"
+    title: "Boat Paddling (IRB)",
+    subtitle: "Water Craft Control",
+    description: "Hands-on water training teaching sync paddling, weight distribution, and team rowing in Inflatable Rescue Boats.",
+    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop",
+    tag: "Water Rescue"
   },
   {
     id: 3,
-    title: "Ziplining & Adventure Camps",
-    subtitle: "Outdoor Confidence & Rigging",
-    description: "Conducting high-rope activities including zipline setups. Trainees master harness inspections, safety checks, structural load-bearing parameters, and self-confidence building.",
-    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop",
-    tag: "Adventure Ops"
+    title: "Boat Handling (IRB)",
+    subtitle: "Motor Operations & Steering",
+    description: "Mastering the mechanical operation, launch protocols, and swift rescue turns of motor-powered Inflatable Rescue Boats.",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+    tag: "IRB Operations"
   },
   {
     id: 4,
-    title: "Women's Self-Defense Camps",
-    subtitle: "Empowerment & Tactical Awareness",
-    description: "Dedicated camps designed to teach escape tactics, verbal boundary enforcement, physical defense maneuvers, and building instant situational confidence.",
+    title: "CPR Workshops",
+    subtitle: "Cardiopulmonary Resuscitation",
+    description: "Learning high-quality compressions, emergency airway management, and proper automated external defibrillator (AED) usage.",
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800&auto=format&fit=crop",
-    tag: "Self-Defense"
+    tag: "Life Support"
   },
   {
     id: 5,
-    title: "Cadet Rifle & Agility Camps",
-    subtitle: "Discipline, Precision & Aiming",
-    description: "Introducing basic rifle safety, range etiquette, breathing rhythms, focus exercises, and obstacle agility courses suitable for student cadet corps.",
-    image: "https://images.unsplash.com/photo-1473876613951-a1a1643b255b?q=80&w=800&auto=format&fit=crop",
-    tag: "Tactical"
+    title: "Emergency Bandaging",
+    subtitle: "Wound Management & Splints",
+    description: "Practical training in wrapping head wounds, applying pressure dressings, and immobilizing limb fractures using splints.",
+    image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=800&auto=format&fit=crop",
+    tag: "First Aid"
   },
   {
     id: 6,
-    title: "Geography & Flood Hazard Mapping",
-    subtitle: "Academic Disaster Preparedness",
-    description: "Using Geography frameworks to study river behaviors, local flood contours, evacuation pathways, and mapping community assembly points during seasonal rain disasters.",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop",
-    tag: "Mitigation"
+    title: "Victim Carrying Drills",
+    subtitle: "Safe Extraction Methods",
+    description: "Understanding single-person carries, two-person seat carries, firemans lift, and drag methods to extract victims safely.",
+    image: "https://images.unsplash.com/photo-1473876613951-a1a1643b255b?q=80&w=800&auto=format&fit=crop",
+    tag: "Evacuation"
+  },
+  {
+    id: 7,
+    title: "Rescue Knots & Rigging",
+    subtitle: "Rope Security & Anchors",
+    description: "Instruction in critical knots (bowline, clove hitch, figure-eight) to establish secure anchors and lines during rescue missions.",
+    image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=800&auto=format&fit=crop",
+    tag: "Rope Rescue"
+  },
+  {
+    id: 8,
+    title: "Basic Fire Fighting",
+    subtitle: "Fire Suppression & Evacuation",
+    description: "Deploying standard fire extinguishers using the PASS method, identifying fire classes, and coordinating safe exits.",
+    image: "https://images.unsplash.com/photo-1599733589046-10c005739ef9?q=80&w=800&auto=format&fit=crop",
+    tag: "Fire Safety"
+  },
+  {
+    id: 9,
+    title: "Wading Techniques",
+    subtitle: "Crossing Flood Channels",
+    description: "Learning wading line formations and methods to cross deep, rapid currents safely as a cohesive responder unit.",
+    image: "https://images.unsplash.com/photo-1504150559414-a479378078f4?q=80&w=800&auto=format&fit=crop",
+    tag: "Flood Rescue"
   }
 ];
 
+// District demographics consolidated from the notebook
 export const districtStats = [
-  { name: "Solapur", trainings: 25, boys: 320, girls: 180, totalTrainees: 500 },
-  { name: "Washim", trainings: 10, boys: 120, girls: 80, totalTrainees: 200 },
-  { name: "Buldana", trainings: 5, boys: 90, girls: 60, totalTrainees: 150 },
-  { name: "Wardha", trainings: 3, boys: 100, girls: 0, totalTrainees: 100 },
-  { name: "Yavatmal", trainings: 2, boys: 70, girls: 30, totalTrainees: 100 },
-  { name: "Wani", trainings: 2, boys: 98, girls: 0, totalTrainees: 98 }
+  { name: "Wardha", trainings: 3, boys: 305, girls: 20, totalTrainees: 325 },
+  { name: "Yavatmal", trainings: 1, boys: 102, girls: 48, totalTrainees: 150 },
+  { name: "Buldhana", trainings: 1, boys: 78, girls: 52, totalTrainees: 130 },
+  { name: "Kanjarla", trainings: 1, boys: 77, girls: 35, totalTrainees: 112 },
+  { name: "Washim", trainings: 1, boys: 41, girls: 19, totalTrainees: 60 }
 ];
 
 export const galleryItems = [
   {
     id: 1,
-    title: "Stick Defense Demonstration",
-    subtitle: "Lathi Kathi Training",
-    category: "Self-Defense",
-    image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=800&auto=format&fit=crop",
-    description: "Training student groups in traditional sticks maneuvers."
+    title: "IRB Maneuvers",
+    subtitle: "Boat Handling",
+    category: "Water Rescue",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop",
+    description: "Trainees practicing speed maneuvers and steering during rapid response exercises."
   },
   {
     id: 2,
-    title: "Zipline Canopy Launch",
-    subtitle: "Adventure and Evacuation Camp",
-    category: "Adventure Ops",
-    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=800&auto=format&fit=crop",
-    description: "Trainees experiencing zip rescue and high-altitude operations."
+    title: "High-Quality CPR",
+    subtitle: "Cardiopulmonary Resuscitation",
+    category: "First Aid & CPR",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800&auto=format&fit=crop",
+    description: "Hands-on practice on training manikins focusing on compression depth and speed."
   },
   {
     id: 3,
-    title: "Aapda Mitra Rescue Course",
-    subtitle: "Emergency Disaster Mitigation",
-    category: "Disaster Response",
+    title: "Emergency Fire Fighting",
+    subtitle: "Extinguisher Operation",
+    category: "Disaster & Fire",
     image: "https://images.unsplash.com/photo-1599733589046-10c005739ef9?q=80&w=800&auto=format&fit=crop",
-    description: "Hands-on structural debris extraction practices."
+    description: "Teaching students and volunteers the PASS technique to handle minor fire outbreaks."
   },
   {
     id: 4,
-    title: "Rifle Shooting Alignment",
-    subtitle: "Aiming and Stance Instruction",
-    category: "Tactical",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop",
-    description: "Correcting aiming eye alignment and breathing styles."
+    title: "Victim Evacuation",
+    subtitle: "Carry Techniques",
+    category: "First Aid & CPR",
+    image: "https://images.unsplash.com/photo-1473876613951-a1a1643b255b?q=80&w=800&auto=format&fit=crop",
+    description: "Demonstrating double-man seat carries and shoulder drags for swift recovery."
   },
   {
     id: 5,
-    title: "Women's Safety Tactics",
-    subtitle: "Self-defense Workshop",
-    category: "Self-Defense",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800&auto=format&fit=crop",
-    description: "Teaching critical locks, holds, and swift escapes."
+    title: "Flood Wading Drills",
+    subtitle: "Wading Line Formations",
+    category: "Water Rescue",
+    image: "https://images.unsplash.com/photo-1504150559414-a479378078f4?q=80&w=800&auto=format&fit=crop",
+    description: "Team formations to safely cross fast-flowing river streams and flood waters."
   },
   {
     id: 6,
-    title: "Run Stamina Drill",
-    subtitle: "Physical Conditioning camp",
-    category: "Mitigation",
-    image: "https://images.unsplash.com/photo-1473876613951-a1a1643b255b?q=80&w=800&auto=format&fit=crop",
-    description: "Speed endurance drill led by State Running Gold Medalist."
+    title: "Rope Rigging and Knots",
+    subtitle: "Knot Instruction",
+    category: "Disaster & Fire",
+    image: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=800&auto=format&fit=crop",
+    description: "Securing anchoring knots for high-angle rescue and rope lines."
   }
 ];
 
@@ -224,30 +258,30 @@ export const testimonials = [
   {
     id: 1,
     name: "Akash Shinde",
-    role: "Adventure Camp Participant",
+    role: "Rescue Course Participant",
     rating: 5,
-    feedback: "Om Sir's ziplining and rope safety instruction was top-notch. He explains safety checks so clearly that everyone felt completely secure. The team-building games were a great bonding experience."
+    feedback: "Om Sir's IRB boat handling and water safety instruction was top-notch. He explains safety checks so clearly that everyone felt completely secure. The hands-on drills were excellent."
   },
   {
     id: 2,
     name: "Sneha Patil",
-    role: "Women's Self-Defense Attendee",
+    role: "First Aid & CPR Attendee",
     rating: 5,
-    feedback: "The 3-day self-defense camp organized by Om Sir was highly empowering. We learned practical moves using everyday items and built actual situational confidence. A must-attend for all girls!"
+    feedback: "The CPR and emergency bandage training organized by Om Sir was highly practical. We learned real life-saving skills and built actual confidence to handle emergency situations."
   },
   {
     id: 3,
     name: "Dr. R. K. Joshi",
     role: "FPA India Solapur Representative",
     rating: 5,
-    feedback: "Om Nagnath Sapar has demonstrated exemplary dedication during our Disaster Risk Reduction events. His discipline, root understanding of geography, and leadership skills make him an outstanding trainer."
+    feedback: "Om Naganath Sapar has demonstrated exemplary dedication during our Disaster Risk Reduction events. His discipline, root understanding of geography, and leadership skills make him an outstanding trainer."
   }
 ];
 
 export const contactDetails = {
-  phone: "+91 8482933655",
-  email: "saparom2000@gmail.com",
-  address: "410, D Group, Vidi Gharkul, Hyderabad Road, Solapur, Maharashtra - 413005",
+  phone: "+91 8483933665",
+  email: "oms847415@gmail.com",
+  address: "B/410, Vidi Gharkul, Hyderabad Road, Solapur, Maharashtra - 413005",
   socials: {
     facebook: "https://facebook.com/om.sapar",
     twitter: "https://twitter.com/om_sapar",
@@ -255,4 +289,3 @@ export const contactDetails = {
     youtube: "https://youtube.com/om_sapar"
   }
 };
-

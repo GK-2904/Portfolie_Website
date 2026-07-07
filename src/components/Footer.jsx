@@ -45,10 +45,10 @@ export default function Footer() {
             </div>
             <div className="flex flex-col">
               <span className="font-heading font-black tracking-tight text-lg text-white leading-none">
-                ITUS
+                Om Naganath Sapar
               </span>
-              <span className="font-sans text-[9px] tracking-widest text-rescue-500 font-bold uppercase">
-                Rescue Academy
+              <span className="font-sans text-[9px] tracking-widest text-rescue-500 font-bold uppercase mt-0.5">
+                Rescue Trainer
               </span>
             </div>
           </div>
@@ -119,7 +119,7 @@ export default function Footer() {
       {/* Border Footer Divider */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-navy-900 pt-8 mt-12 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-semibold">
         <p className="text-gray-650">
-          © {new Date().getFullYear()} ITUS - Indian Rescue Academy. All rights reserved. Developed for Lead Instructor {instructorInfo.name}.
+          © {new Date().getFullYear()} {instructorInfo.name}. All rights reserved.
         </p>
         
         {/* Scroll back up anchor */}
