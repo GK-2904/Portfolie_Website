@@ -3,6 +3,9 @@ import { Settings, X, Save, RotateCcw, Download, Image, User, Briefcase, FileCod
 import { usePortfolio } from '../context/PortfolioContext';
 
 export default function Customizer() {
+  const isEditMode = typeof window !== 'undefined' && window.location.search.includes('edit=true');
+  if (!isEditMode) return null;
+
   const [isOpen, setIsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('profile');
   const { rawData, updateData, resetData } = usePortfolio();
@@ -98,10 +101,14 @@ export default function Customizer() {
   };
 
   const handleExport = () => {
-    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(tempData, null, 2));
+    const dataWithTimestamp = {
+      ...tempData,
+      updatedAt: Date.now()
+    };
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(dataWithTimestamp, null, 2));
     const downloadAnchor = document.createElement('a');
     downloadAnchor.setAttribute("href", dataStr);
-    downloadAnchor.setAttribute("download", "trainingData_custom.json");
+    downloadAnchor.setAttribute("download", "trainingData.json");
     document.body.appendChild(downloadAnchor);
     downloadAnchor.click();
     downloadAnchor.remove();
@@ -484,15 +491,33 @@ export default function Customizer() {
 
               {/* Export/Reset Tab */}
               {activeTab === 'export' && (
-                <div className="space-y-6 flex flex-col justify-center h-64 text-center">
-                  <div className="space-y-2">
+                <div className="space-y-6 text-left p-2">
+                  <div className="space-y-2 text-center">
                     <h4 className="font-heading font-bold text-lg text-navy-800 dark:text-white">Save & Export Configuration</h4>
-                    <p className="text-xs text-gray-500 dark:text-gray-400 max-w-xs mx-auto">
-                      Once you finish uploading your real photos, download the custom config file. You can replace the local file contents or share it directly.
+                    <p className="text-xs text-gray-500 dark:text-gray-400 max-w-sm mx-auto">
+                      All changes you make are currently saved in your browser's local storage. To apply them permanently to your live domain:
                     </p>
                   </div>
 
-                  <div className="flex flex-col gap-3 max-w-xs mx-auto w-full pt-4">
+                  <div className="bg-gray-50 dark:bg-navy-900/60 border border-gray-150 dark:border-navy-900 rounded-xl p-4 space-y-3 text-xs text-gray-600 dark:text-gray-300">
+                    <h5 className="font-bold text-navy-800 dark:text-white uppercase tracking-wider text-[10px]">Steps for Permanent Update:</h5>
+                    <ol className="list-decimal list-inside space-y-2">
+                      <li>
+                        <span className="font-semibold text-navy-800 dark:text-white">Download the config:</span> Click the button below to download your <code className="px-1.5 py-0.5 bg-gray-200 dark:bg-navy-800 rounded font-mono text-[10px]">trainingData_custom.json</code>.
+                      </li>
+                      <li>
+                        <span className="font-semibold text-navy-800 dark:text-white">Rename the file:</span> Rename the downloaded file to <code className="px-1.5 py-0.5 bg-gray-200 dark:bg-navy-800 rounded font-mono text-[10px]">trainingData.json</code>.
+                      </li>
+                      <li>
+                        <span className="font-semibold text-navy-800 dark:text-white">Over-write locally:</span> Put this file in your project folder under <code className="px-1.5 py-0.5 bg-gray-200 dark:bg-navy-800 rounded font-mono text-[10px]">src/data/</code>, replacing the old one.
+                      </li>
+                      <li>
+                        <span className="font-semibold text-navy-800 dark:text-white">Deploy:</span> Open terminal, run <code className="block mt-1 p-1 bg-gray-100 dark:bg-navy-950 rounded font-mono text-[10px] whitespace-pre text-center">git add .&#10;git commit -m "Update portfolio"&#10;git push</code>
+                      </li>
+                    </ol>
+                  </div>
+
+                  <div className="flex flex-col gap-3 max-w-xs mx-auto w-full pt-2">
                     <button
                       onClick={handleExport}
                       className="px-4 py-3 bg-navy-800 hover:bg-navy-700/90 text-white font-bold text-sm rounded-xl flex items-center justify-center gap-2 border border-navy-700 shadow-md transition-all duration-200"
@@ -503,9 +528,9 @@ export default function Customizer() {
 
                     <button
                       onClick={handleReset}
-                      className="px-4 py-3 bg-red-50 hover:bg-red-100 dark:bg-red-950/20 text-red-655 dark:text-red-400 font-bold text-sm rounded-xl flex items-center justify-center gap-2 border border-red-200/50 dark:border-red-900/30 transition-all duration-200"
+                      className="px-4 py-3 bg-red-50 hover:bg-red-100 dark:bg-red-950/20 text-red-650 dark:text-red-400 font-bold text-sm rounded-xl flex items-center justify-center gap-2 border border-red-200/50 dark:border-red-900/30 transition-all duration-200"
                     >
-                      <RotateCcw className="w-4 h-4 animate-spin-hover" />
+                      <RotateCcw className="w-4 h-4" />
                       <span>Reset to Original Defaults</span>
                     </button>
                   </div>

@@ -5,45 +5,38 @@ const PortfolioContext = createContext(null);
 
 export function PortfolioProvider({ children }) {
   const [data, setData] = useState(() => {
-    try {
-      const saved = localStorage.getItem('sapar_portfolio_data');
-      if (saved) {
-        return JSON.parse(saved);
+    const isEditMode = typeof window !== 'undefined' && window.location.search.includes('edit=true');
+    if (isEditMode) {
+      try {
+        const saved = localStorage.getItem('sapar_portfolio_data');
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          // If the JSON file has a newer timestamp than the one saved in local storage,
+          // it means the owner deployed an update. Use the fresh JSON data.
+          if (!parsed.updatedAt || (initialData.updatedAt && initialData.updatedAt > parsed.updatedAt)) {
+            localStorage.setItem('sapar_portfolio_data', JSON.stringify(initialData));
+            return initialData;
+          }
+          return parsed;
+        }
+      } catch (e) {
+        console.error('Error loading portfolio data from localStorage:', e);
       }
-    } catch (e) {
-      console.error('Error loading portfolio data from localStorage:', e);
     }
-    return {
-      instructorInfo: initialData.instructorInfo,
-      impactStats: initialData.impactStats,
-      subjects: initialData.subjects,
-      activities: initialData.activities,
-      districtStats: initialData.districtStats,
-      galleryItems: initialData.galleryItems,
-      certifications: initialData.certifications,
-      testimonials: initialData.testimonials,
-      contactDetails: initialData.contactDetails,
-    };
+    return initialData;
   });
 
   const updateData = (newData) => {
-    setData(newData);
-    localStorage.setItem('sapar_portfolio_data', JSON.stringify(newData));
+    const dataWithTimestamp = {
+      ...newData,
+      updatedAt: Date.now()
+    };
+    setData(dataWithTimestamp);
+    localStorage.setItem('sapar_portfolio_data', JSON.stringify(dataWithTimestamp));
   };
 
   const resetData = () => {
-    const raw = {
-      instructorInfo: initialData.instructorInfo,
-      impactStats: initialData.impactStats,
-      subjects: initialData.subjects,
-      activities: initialData.activities,
-      districtStats: initialData.districtStats,
-      galleryItems: initialData.galleryItems,
-      certifications: initialData.certifications,
-      testimonials: initialData.testimonials,
-      contactDetails: initialData.contactDetails,
-    };
-    setData(raw);
+    setData(initialData);
     localStorage.removeItem('sapar_portfolio_data');
   };
 
