@@ -1,17 +1,23 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react'
-import { testimonials } from '../data/trainingData'
+import { usePortfolio } from '../context/PortfolioContext'
 
 export default function Testimonials() {
+  const { testimonials = [] } = usePortfolio();
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
+    if (testimonials.length === 0) return;
     const timer = setInterval(() => {
       setActiveIndex((prevIdx) => (prevIdx + 1) % testimonials.length);
     }, 6000); // rotate every 6s
     return () => clearInterval(timer);
-  }, []);
+  }, [testimonials.length]);
+
+  if (testimonials.length === 0) {
+    return null;
+  }
 
   const handleNext = () => {
     setActiveIndex((prevIdx) => (prevIdx + 1) % testimonials.length);
